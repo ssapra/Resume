@@ -1,0 +1,137 @@
+\documentclass[11pt,a4paper]{moderncv}
+%possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\nopagenumbers{}
+
+\newcommand\mybitem[1]{%
+   \parbox[t]{3mm}{}\parbox[t]{10cm}{#1}}
+
+\newcommand*{\entry}[7][.25em]{%
+ \cvitem[#1]{#2}{%
+   {\bfseries#3}%
+   \ifthenelse{\equal{#4}{}}{}{, \textbf{#4}}%
+   \ifthenelse{\equal{#5}{}}{}{, #5}%
+   \ifthenelse{\equal{#6}{}}{}{, #6}%
+   .\strut%
+   \ifx&#7&%
+     \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{fontspec}
+
+\usepackage[scale=0.88, left=1cm, right=1cm]{geometry}
+
+\setmainfont[Path = fonts/lato/,BoldItalicFont=OpenSans-Italic,BoldFont=OpenSans-Regular,ItalicFont=Lato-LigIta]{Lato-Lig}
+
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\renewcommand*{\cvdoubleitem}[5][.25em]{%
+ \cvitem[#1]{#2}{%
+   \begin{minipage}[t]{\doubleitemmaincolumnwidth+0.25\hintscolumnwidth}#3\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{0.5\hintscolumnwidth}\raggedleft\hintstyle{#4}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\doubleitemmaincolumnwidth+0.25\hintscolumnwidth}#5\end{minipage}}}
+
+\begin{document}
+
+\namesection{Sameet}{Sapra}{
+\urlstyle{same}\url{http://sameetsapra.com} \\
+\href{mailto:ssapra2@illinois.edu}{ssapra2@illinois.edu} | 630.696.1597 | github.com/sameetandpotatoes}
+
+\section{Education}
+
+\cventry{Expected 2018}{University of Illinois at Urbana Champaign}{GPA: 4.0/4.0}{}{}{
+\begin{itemize}
+\item Bachelor of Science in Computer Science, Minor in Mathematical Statistics
+\item Coursework: Data Structures, Algorithms and Graph Theory, Computer Architecture, Artificial Intelligence, Databases
+\item Honors: James Scholar, Dean's List
+\end{itemize}}
+
+\section{Programming Languages}
+
+\cvdoubleitem{High Level}{Python, Java, Ruby, SQL, C++}{System}{MIPS Assembly, Verilog, Bash, Zsh}
+\cvdoubleitem{Web}{Rails, React.js, Django, Flux, Angular.js}{Math}{Mathematica, numpy, LaTeX}
+\cvdoubleitem{Hardware}{Arduino, Raspberry Pi, Linux Servers}{Tools}{Git, Atom, AWS}
+
+\section{Experience}
+
+\entry[0.10em]{Fall 2015 - Present}{Full Stack Web Developer}{Cognitive Computation Group}{Champaign}{IL}{
+\mybitem{\textit{Angular.js, PHP} \textasciitilde \textit{5,000 lines}}
+\begin{itemize}
+\item Refactor the research tools and demos on the website in PHP and Angular.js
+\item Improve the performance and reliability of the content management system for website administrators
+\end{itemize}}
+
+\entry[0.10em]{Summer 2016}{Software Engineer Intern}{NextCapital}{Chicago}{IL}{
+\mybitem{\textit{Ruby, Rails, Java, AWS, React.js} \textasciitilde \textit{20,000 lines}}
+\begin{itemize}
+\item Directed front end team to migrate to React and Redux and incorporate a component-based architecture
+\item Interfaced with Lambda services on AWS to enroll new users onto the platform
+\item Refactored financial institution data import stack in Ruby to securely store confidential user information
+\item Built internal dashboard with PivotalTracker's API to track progress for major milestones
+\end{itemize}}
+
+\entry[0.10em]{Fall 2015 - Spring 2016}{Research Assistant}{Department of Computer Science}{Champaign}{IL}{
+\mybitem{\textit{C++, Networking} \textasciitilde \textit{1,000 lines}}
+\begin{itemize}
+  \item Documented sample packet fields and values for network protocols
+  \item Implemented network protocols in C++
+\end{itemize}}
+
+\entry{Summer 2015}{Front End Engineer Intern}{SimpleRelevance}{Chicago}{IL}{
+\mybitem{\textit{Python, Django, React.js, Backbone.js} \textasciitilde \textit{250,000 lines}}
+\begin{itemize}
+\item Overhauled the website dashboard with React.js and Flux architecture
+\item Constructed adjustable graphs and daily reports to export data as a pdf or csv
+\item Optimized website for all mobile devices and browsers, improving page load speed by 25\%
+\item Created an admin panel for administrators to dynamically update static content
+\end{itemize}}
+
+%\cventry{May 2014 - September 2014}{Mobile Developer}{UEvents}{Chicago}{IL}{
+%\begin{itemize}
+%\item Developed a working prototype of a nationwide event discovery platform with University of Chicago students
+%\item Compatible on both iOS and Android platforms
+%\end{itemize}}
+
+\section{Extracurriculars and Hackathons}
+
+\cventry[0.10em]{February 2016 - Present}{Co-Chair for Information Retrieval in Association for Computing Machinery}{}{}{}{
+\begin{itemize}
+  \item Teach students how to retrieve, parse, store, and visualize big data using Python and d3.js
+  \item Manage projects such as analyzing presidential election outcomes with respect to different global issues
+\end{itemize}}
+
+\cventry[0.10em]{February 2016}{UIUC HackIllinois - Open Source Division}{}{}{}{
+\begin{itemize}
+  \item Built a backend Java application to assess a user's credibility and store user registration information to help in allocating computing resources for Apache Airavata
+  \item Recognized as a top 3 open source project
+\end{itemize}}
+
+\cventry[0.10em]{January 2016}{Search Engine for Recipes}{}{}{}{
+\begin{itemize}
+  \item Developed a web application to recursively crawl recipe websites and query results with Elasticsearch
+  \item Served as a project manager and full stack web developer on the team
+\end{itemize}}
+
+% \cventry[0.10em]{October 2015}{AllState Connected Home Hackathon}{}{}{}{
+% \begin{itemize}
+%   \item Constructed an Internet of Things application to control, view, and manage sensors
+%   \item Ranked 3rd out of 20 teams
+% \end{itemize}}
+
+\cventry{July 2014 - August 2014}{2048 AI Solver}{}{}{}{
+\begin{itemize}
+\item Built a 2048 AI solver in Java using a mini-max algorithm with alpha-beta pruning
+\item Presented to Stanford University faculty and students
+\end{itemize}}
+
+% \cventry[0.10em]{July 2013}{Arduino Weather Balloon}{}{}{}{\begin{itemize}
+% \item Launched payload balloon powered by solar panels and an Arduino Mega that used a Geiger counter, barometer, temperature sensor, and GPS sensor to record environment variables and output data to an SD card
+% \end{itemize}}
+
+\end{document}

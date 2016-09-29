@@ -1,6 +1,5 @@
 \documentclass[11pt,a4paper]{moderncv}
 %possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
 \moderncvstyle{casual}
 \moderncvcolor{blue}
 \nopagenumbers{}
@@ -22,7 +21,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{fontspec}
-
+\usepackage{fontawesome}
 \usepackage[scale=0.88, left=1cm, right=1cm]{geometry}
 
 \setmainfont[Path = fonts/lato/,BoldItalicFont=OpenSans-Italic,BoldFont=OpenSans-Regular,ItalicFont=Lato-LigIta]{Lato-Lig}
@@ -40,8 +39,8 @@
 \begin{document}
 
 \namesection{Sameet}{Sapra}{
-\urlstyle{same}\url{http://sameetsapra.com} \\
-\href{mailto:ssapra2@illinois.edu}{ssapra2@illinois.edu} | 630.696.1597 | github.com/sameetandpotatoes}
+\urlstyle{same}\faGlobe{ \url{ http://sameetsapra.com}} \\
+\faEnvelope{ ssapra2@illinois.edu} | \faPhone{ 630.696.1597} | \faGithub{ sameetandpotatoes}}
 
 \section{Education}
 
@@ -84,7 +83,7 @@
 \end{itemize}}
 
 \entry{Summer 2015}{Front End Engineer Intern}{SimpleRelevance}{Chicago}{IL}{
-\mybitem{\textit{Python, Django, React.js, Backbone.js} \textasciitilde \textit{250,000 lines}}
+\mybitem{\textit{Python, Django, React.js, Backbone.js} \textasciitilde \textit{100,000 lines}}
 \begin{itemize}
 \item Overhauled the website dashboard with React.js and Flux architecture
 \item Constructed adjustable graphs and daily reports to export data as a pdf or csv
@@ -98,7 +97,7 @@
 %\item Compatible on both iOS and Android platforms
 %\end{itemize}}
 
-\section{Extracurriculars and Hackathons}
+\section{Projects and Activities}
 
 \cventry[0.10em]{February 2016 - Present}{Co-Chair for Information Retrieval in Association for Computing Machinery}{}{}{}{
 \begin{itemize}

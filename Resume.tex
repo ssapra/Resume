@@ -21,7 +21,7 @@
 
 \usepackage{fontspec}
 \usepackage{fontawesome}
-\usepackage[scale=0.88, left=1cm, right=1cm]{geometry}
+\usepackage[scale=0.89, left=1cm, right=1cm]{geometry}
 
 \setmainfont[Path = fonts/lato/,BoldItalicFont=OpenSans-Italic,BoldFont=OpenSans-Regular,ItalicFont=Lato-LigIta]{Lato-Lig}
 
@@ -43,20 +43,27 @@
 
 \section{Education}
 
-\cventry{Expected 2019}{University of Illinois at Urbana Champaign}{GPA: 3.97/4.0}{}{}{
+\cventry{Expected 2019}{University of Illinois at Urbana Champaign}{GPA: 3.93/4.0}{}{}{
 \begin{itemize}
 \item Bachelor of Science in Computer Science, Minor in Mathematical Statistics
-\item Coursework: Algorithms and Graph Theory, Systems Programming, Data Structures, Computer Architecture, Virtual Reality, Programming Languages and Compilers, Artificial Intelligence, Databases
+\item Coursework: Algorithms and Graph Theory, Systems Programming, Data Structures, Computer Architecture, Artificial Intelligence, Databases, Programming Languages and Compilers
 \item Honors: James Scholar, Dean's List
 \end{itemize}}
 
 \section{Programming Languages}
 
-\cvdoubleitem{High Level}{Python, Java, Ruby, C++}{System}{C, MIPS Assembly, Verilog, Bash, Zsh}
-\cvdoubleitem{Web}{Rails, React.js, Django, SQL, Angular.js}{Math}{Mathematica, numpy, LaTeX}
-\cvdoubleitem{Hardware}{Arduino, Raspberry Pi, Linux Servers}{Tools}{Git, Atom, AWS}
+\cvdoubleitem{High Level}{Python, Java, Ruby, C++}{System}{C, Bash, MIPS Assembly}
+\cvdoubleitem{Web}{SQL, Rails, React.js, Django, Angular.js}{Math}{numpy, LaTeX, Mathematica}
+\cvdoubleitem{Hardware}{Arduino, Raspberry Pi}{Tools}{Git, ViM, AWS, Tensorflow}
 
 \section{Experience}
+
+\entry[0.10em]{May 2017 - Present}{Software Engineering Intern}{Cask Data}{Palo Alto}{CA}{
+\mybitem{\textit{Java} \textasciitilde \textit{5,000 lines}}
+\begin{itemize}
+  \item Add the ability to trigger programs based on other program statuses on Cask CDAP, a data application platform for building big data applications on top of a distributed environment
+  \item Direct the use case, API design, and refactor program state management on the platform
+\end{itemize}}
 
 \entry[0.10em]{Fall 2015 - December 2016}{Full Stack Web Developer}{Cognitive Computation Group}{Champaign}{IL}{
 \mybitem{\textit{Angular.js, PHP} \textasciitilde \textit{5,000 lines}}
@@ -74,12 +81,11 @@
 \item Built internal dashboard with PivotalTracker's API to track progress for major milestones
 \end{itemize}}
 
-\entry[0.10em]{Fall 2015 - Spring 2016}{Undergraduate Research Assistant}{Department of Computer Science}{Champaign}{IL}{
-\mybitem{\textit{C++, Networking} \textasciitilde \textit{1,000 lines}}
-\begin{itemize}
-  \item Documented sample packet fields and values for network protocols
-  \item Implemented network protocols in C++
-\end{itemize}}
+% \entry[0.10em]{Fall 2015 - Spring 2016}{Undergraduate Research Assistant}{Department of Computer Science}{Champaign}{IL}{
+% \mybitem{\textit{C++, Networking} \textasciitilde \textit{1,000 lines}}
+% \begin{itemize}
+%   \item Documented sample packets for network protocols
+% \end{itemize}}
 
 \entry{Summer 2015}{Front End Engineer Intern}{SimpleRelevance}{Chicago}{IL}{
 \mybitem{\textit{Python, Django, React.js, Backbone.js} \textasciitilde \textit{100,000 lines}}
@@ -97,16 +103,16 @@
 
 \section{Projects and Activities}
 
-\cventry[0.10em]{February 2016 - Present}{Co-Chair for Information Retrieval in Association for Computing Machinery}{}{}{}{
+\cventry[0.10em]{September 2016 - Present}{Lead Project Groot Website Developer}{}{}{}{
 \begin{itemize}
-  \item Teach students how to retrieve, parse, store, and visualize big data using Python and d3.js
-  \item Manage projects such as analyzing presidential election outcomes with respect to different global issues
+  \item Develop web application to manage access to student resumes and replace core UIUC's ACM infrastructure
+  \item Use a service-oriented architecture to encourage independent and reusable components
 \end{itemize}}
 
-\cventry[0.10em]{September 2016 - January 2017}{Lead Project Groot Website Developer}{}{}{}{
+\cventry[0.10em]{February 2016 - May 2017}{Co-Chair for Information Retrieval in Association for Computing Machinery}{}{}{}{
 \begin{itemize}
-  \item Developed web application to replace core ACM infrastructure as part of ACM's corporate committee.
-  \item Implemented service-oriented architecture to encourage independent, reusable components
+  \item Taught students how to parse, store, and visualize big data using Python and d3.js
+  \item Managed projects such as analyzing presidential election outcomes with respect to different global issues
 \end{itemize}}
 
 \cventry[0.10em]{February 2016}{UIUC HackIllinois - Open Source Division}{}{}{}{

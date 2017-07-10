@@ -1,17 +1,7 @@
+# The name of the main .tex file
 PROJECT = Resume
 
-all: clean default display
-
-default: obj/$(PROJECT).pdf
-
-display: default
-	(${PDFVIEWER} obj/$(PROJECT).pdf &)
-
-clean:
-	rm -rf obj/
-
 FLAGS  = -halt-on-error -output-directory obj/
-
 ENGINE = xelatex
 TEXINPUTS = .:obj/
 TEXMFOUTPUT = obj/
@@ -32,6 +22,19 @@ endif
 ifeq ($(UNAME), Darwin)
 PDFVIEWER = open
 endif
+
+all: clean default display
+
+default: obj/$(PROJECT).pdf
+
+display: default
+	(${PDFVIEWER} obj/$(PROJECT).pdf &)
+
+clean:
+	rm -rf obj/
+
+deploy:
+	cp obj/$(PROJECT).pdf ~/Dropbox/${PROJECT}.pdf
 
 ### Core Latex Generation
 

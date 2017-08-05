@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[12pt,a4paper]{moderncv}
 %possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \moderncvstyle{casual}
 \moderncvcolor{blue}
@@ -20,127 +20,86 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{fontspec}
-\usepackage{fontawesome}
-\usepackage[scale=0.92, left=1cm, right=1cm]{geometry}
+\usepackage[scale=0.92, top=1.5cm, left=2cm, right=2cm]{geometry}
 
 \setmainfont[Path = fonts/lato/,BoldItalicFont=OpenSans-Italic,BoldFont=OpenSans-Regular,ItalicFont=Lato-LigIta]{Lato-Lig}
 
 \setlength{\hintscolumnwidth}{2.5cm}
 
-\renewcommand*{\cvdoubleitem}[5][.25em]{%
- \cvitem[#1]{#2}{%
-   \begin{minipage}[t]{\doubleitemmaincolumnwidth+0.25\hintscolumnwidth}#3\end{minipage}%
-   \hspace*{\separatorcolumnwidth}%
-   \begin{minipage}[t]{0.5\hintscolumnwidth}\raggedleft\hintstyle{#4}\end{minipage}%
-   \hspace*{\separatorcolumnwidth}%
-   \begin{minipage}[t]{\doubleitemmaincolumnwidth+0.25\hintscolumnwidth}#5\end{minipage}}}
-
 \begin{document}
 
-\namesection{Sameet}{Sapra}{
-\urlstyle{same}\faGlobe{ \url{ http://sameetsapra.com}} \\
-\faEnvelope{ ssapra2@illinois.edu} | \faPhone{ 630.696.1597} | \faGithub{ sameetandpotatoes}}
-
-\section{Education}
-
-\cventry{Expected 2019}{University of Illinois at Urbana Champaign}{GPA: 3.93/4.0}{}{}{
-\begin{itemize}
-\item Bachelor of Science in Computer Science, Minor in Mathematical Statistics
-\item Coursework: Algorithms and Graph Theory, Systems Programming, Data Structures, Computer Architecture, Artificial Intelligence, Databases, Programming Languages and Compilers
-\item Honors: James Scholar, Dean's List
-\end{itemize}}
-
-\section{Programming Languages}
-
-\cvdoubleitem{High Level}{Python, Java, Ruby, C++}{System}{C, Bash, MIPS Assembly}
-\cvdoubleitem{Web}{SQL, Rails, React.js, Django, Angular.js}{Math}{numpy, LaTeX, Mathematica}
-\cvdoubleitem{Hardware}{Arduino, Raspberry Pi}{Tools}{Git, ViM, AWS, Tensorflow}
+\namesection{Shaan}{Sapra}{
+\urlstyle{same}\url{http://shaansapra.com} \\
+shaanfire@gmail.com | 630.696.8303 | github.com/ssapra}
 
 \section{Experience}
 
-\entry[0.10em]{May 2017 - Present}{Software Engineering Intern}{Cask Data}{Palo Alto}{CA}{
-\mybitem{\textit{Java} \textasciitilde \textit{5,000 lines}}
+\entry[0.10em]{August 2016 - Present}{Sr. Software Engineer}{Enova International}{Chicago}{IL}{
 \begin{itemize}
-  \item Add the ability to trigger programs based on other program statuses on Cask CDAP, a data application platform for building big data applications on top of a distributed environment
-  \item Direct the use case, API design, and refactor program state management on the platform
+  \item Coordinated upgrade and deployment of 10-year-old legacy application from Rails 2.0 to Rails 2.3, leveraging new infrastructure while removing deprecated code
+  \vspace{3pt}
+  \item Configured garbage collector and optimized frontend application, leading to 30-40\% faster response times and reduced page load time for international customers
 \end{itemize}}
 
-\entry[0.10em]{Fall 2015 - December 2016}{Full Stack Web Developer}{Cognitive Computation Group}{Champaign}{IL}{
-\mybitem{\textit{Angular.js, PHP} \textasciitilde \textit{5,000 lines}}
+\vspace{10pt}
+
+\entry[0.10em]{July 2015 - August 2016}{Software Engineer}{Enova International}{Chicago}{IL}{
 \begin{itemize}
-\item Refactor the research tools and demos on the website in PHP and Angular.js
-\item Improve the performance and reliability of the content management system for website administrators
+  \item Delivered Rails application to automate asset-backed securitization for over \$100M, reducing tens of hours of manual work per week to several hours with little work
+  \vspace{3pt}
+  \item Migrated financial reporting from legacy Ruby application to Go application, improving accuracy in monthly review by accountants and application runtime by several hours
 \end{itemize}}
 
-\entry[0.10em]{Summer 2016}{Software Engineer Intern}{NextCapital}{Chicago}{IL}{
-\mybitem{\textit{Ruby, Rails, Java, AWS, React.js} \textasciitilde \textit{20,000 lines}}
+\vspace{10pt}
+
+\entry[0.10em]{July 2014 - August 2014}{Software Engineering Intern}{Opower}{San Francisco}{CA}{
 \begin{itemize}
-\item Directed front end team to migrate to React and Redux and incorporate a component-based architecture
-\item Interfaced with Lambda services on AWS to enroll new users onto the platform
-\item Refactored financial institution data import stack in Ruby to securely store confidential user information
-\item Built internal dashboard with PivotalTracker's API to track progress for major milestones
+\item Adapted Rails application to handle new location-based functionality to communicate with iOS and Android apps for thousands of customers with smart thermostats
+\vspace{3pt}
+\item Upgraded legacy Customer Service portal to provide more relevant customer status by modifying SQL view, creating new endpoints, and updating AngularJS application
 \end{itemize}}
-
-% \entry[0.10em]{Fall 2015 - Spring 2016}{Undergraduate Research Assistant}{Department of Computer Science}{Champaign}{IL}{
-% \mybitem{\textit{C++, Networking} \textasciitilde \textit{1,000 lines}}
-% \begin{itemize}
-%   \item Documented sample packets for network protocols
-% \end{itemize}}
-
-\entry{Summer 2015}{Front End Engineer Intern}{SimpleRelevance}{Chicago}{IL}{
-\mybitem{\textit{Python, Django, React.js, Backbone.js} \textasciitilde \textit{100,000 lines}}
-\begin{itemize}
-\item Overhauled the website dashboard with React.js and Flux architecture
-\item Constructed adjustable graphs and daily reports to export data as a pdf or csv
-\item Optimized website for all mobile devices and browsers, improving page load speed by 25\%
-\end{itemize}}
-
-%\cventry{May 2014 - September 2014}{Mobile Developer}{UEvents}{Chicago}{IL}{
-%\begin{itemize}
-%\item Developed a working prototype of a nationwide event discovery platform with University of Chicago students
-%\item Compatible on both iOS and Android platforms
-%\end{itemize}}
 
 \section{Projects and Activities}
 
-\cventry[0.10em]{September 2016 - Present}{Lead Project Groot Website Developer}{}{}{}{
+\entry[0.10em]{Summer 2017}{Instructor}{CodeNow}{Chicago}{IL}{
 \begin{itemize}
-  \item Develop web application to manage access to student resumes and replace core UIUC's ACM infrastructure
-  \item Use a service-oriented architecture to encourage independent and reusable components
+  \item Volunteered 20+ hours with CodeNow to teach design-thinking, frontend, and backend development to a small group of high-school students for the pilot program in Chicago
 \end{itemize}}
 
-\cventry[0.10em]{February 2016 - May 2017}{Co-Chair for Information Retrieval in Association for Computing Machinery}{}{}{}{
+\vspace{10pt}
+
+\entry[0.10em]{2013-2015}{CTO}{UEvents}{Chicago}{IL}{
 \begin{itemize}
-  \item Taught students how to parse, store, and visualize big data using Python and d3.js
-  \item Managed projects such as analyzing presidential election outcomes with respect to different global issues
+  \item Developed web platform with Facebook Graph API that offered a comprehensive list of college campus events to over 1800 registered students at UChicago
 \end{itemize}}
 
-\cventry[0.10em]{February 2016}{UIUC HackIllinois - Open Source Division}{}{}{}{
+\vspace{10pt}
+
+\entry[0.10em]{2012-2013}{Lead Developer}{Project SAM}{Chicago}{IL}{
 \begin{itemize}
-  \item Built a backend Java application to assess a user's credibility and store user registration information to help in allocating computing resources for Apache Airavata
-  \item Recognized as a top 3 open source project
+  \item Managed development of MVP that allows healthcare systems in developing countries to manage supply shipments through basic feature-phones
 \end{itemize}}
 
-\cventry[0.10em]{January 2016}{Search Engine for Recipes}{}{}{}{
+\section{Education}
+
+\entry{June 2015}{University of Chicago}{}{Chicago}{IL}{
 \begin{itemize}
-  \item Developed a web application to recursively crawl recipe websites and query results with Elasticsearch
-  \item Served as a project manager and full stack web developer on the team
+\item Bachelor of Science in Computer Science, Bachelor of Arts in Economics
+\vspace{3pt}
+\item Honors: 2014 KPCB Fellow, CNVC Finalist, Jane Morton \& Henry Murphy Award
 \end{itemize}}
 
-% \cventry[0.10em]{October 2015}{AllState Connected Home Hackathon}{}{}{}{
-% \begin{itemize}
-%   \item Constructed an Internet of Things application to control, view, and manage sensors
-%   \item Ranked 3rd out of 20 teams
-% \end{itemize}}
+\vspace{10pt}
 
-% \cventry{July 2014 - August 2014}{2048 AI Solver}{}{}{}{
-% \begin{itemize}
-% \item Built a 2048 AI solver in Java using a mini-max algorithm with alpha-beta pruning
-% \item Presented to Stanford University faculty and students
-% \end{itemize}}
+\entry{Summer 2012}{Starter League}{}{Chicago}{IL}{
+\begin{itemize}
+\item 11-week course on web development (Ruby on Rails, Git, Test-Driven Development)
+\end{itemize}}
 
-% \cventry[0.10em]{July 2013}{Arduino Weather Balloon}{}{}{}{\begin{itemize}
-% \item Launched payload balloon powered by solar panels and an Arduino Mega that used a Geiger counter, barometer, temperature sensor, and GPS sensor to record environment variables and output data to an SD card
-% \end{itemize}}
+\section{Skills}
+
+\cvitem{Strong}{Ruby on Rails, SQL, RSpec, Cucumber, Git}
+\vspace{3pt}
+\cvitem{Knowledgable}{Go, AngularJS, HTML, CSS, Javascript, Agile Scrum}
 
 \end{document}

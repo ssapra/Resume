@@ -20,7 +20,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{fontspec}
-\usepackage[scale=0.92, top=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage[scale=0.92, top=1.5cm, left=1.5cm, right=1.5cm]{geometry}
 
 \setmainfont[Path = fonts/lato/,BoldItalicFont=OpenSans-Italic,BoldFont=OpenSans-Regular,ItalicFont=Lato-LigIta]{Lato-Lig}
 
@@ -29,12 +29,24 @@
 \begin{document}
 
 \namesection{Shaan}{Sapra}{
-\urlstyle{same}\url{http://shaansapra.com} \\
 shaanfire@gmail.com | 630.696.8303 | github.com/ssapra}
 
 \section{Experience}
 
-\entry[0.10em]{August 2016 - Present}{Sr. Software Engineer}{Enova International}{Chicago}{IL}{
+\entry[0.10em]{March 2018 - Present}{Sr. Software Engineer}{Pivotal/VMware}{San Francisco}{CA}{
+\begin{itemize}
+  \item Designed and integrated certificate rotation procedure into Tanzu Operations Manager for hundreds of certificates installed on customers` installations
+  \vspace{3pt}
+  \item Integrated new features with multiple infrastructures such as availability zones in Azure, host groups in vSphere, and identity v3 in Openstack
+  \vspace{3pt}
+  \item Enhanced platform manager with rsyslog support, API endpoints for granular control over platform deployments, and UI redesign with React
+  \vspace{3pt}
+  \item Led new architecture for developer-enabled backup and restore and external TCP access in Tanzu SQL data service for the platform
+\end{itemize}}
+
+\vspace{10pt}
+
+\entry[0.10em]{Aug 2016 - Feb 2018}{Sr. Software Engineer}{Enova International}{Chicago}{IL}{
 \begin{itemize}
   \item Coordinated upgrade and deployment of 10-year-old legacy application from Rails 2.0 to Rails 2.3, leveraging new infrastructure while removing deprecated code
   \vspace{3pt}
@@ -43,27 +55,18 @@ shaanfire@gmail.com | 630.696.8303 | github.com/ssapra}
 
 \vspace{10pt}
 
-\entry[0.10em]{July 2015 - August 2016}{Software Engineer}{Enova International}{Chicago}{IL}{
+\entry[0.10em]{July 2015 - Aug 2016}{Software Engineer}{Enova International}{Chicago}{IL}{
 \begin{itemize}
   \item Delivered Rails application to automate asset-backed securitization for over \$100M, reducing tens of hours of manual work per week to several hours with little work
   \vspace{3pt}
   \item Migrated financial reporting from legacy Ruby application to Go application, improving accuracy in monthly review by accountants and application runtime by several hours
 \end{itemize}}
 
-\vspace{10pt}
-
-\entry[0.10em]{July 2014 - August 2014}{Software Engineering Intern}{Opower}{San Francisco}{CA}{
-\begin{itemize}
-\item Adapted Rails application to handle new location-based functionality to communicate with iOS and Android apps for thousands of customers with smart thermostats
-\vspace{3pt}
-\item Upgraded legacy Customer Service portal to provide more relevant customer status by modifying SQL view, creating new endpoints, and updating AngularJS application
-\end{itemize}}
-
 \section{Projects and Activities}
 
-\entry[0.10em]{Summer 2017}{Instructor}{CodeNow}{Chicago}{IL}{
+\entry[0.10em]{Summer 2019, 2017}{Instructor}{CodeNow}{San Francisco, CA and }{Chicago, IL}{
 \begin{itemize}
-  \item Volunteered 20+ hours with CodeNow to teach design-thinking, frontend, and backend development to a small group of high-school students for the pilot program in Chicago
+  \item Volunteered 20+ hours with CodeNow to teach design-thinking, frontend, and backend development to small groups of high-school students
 \end{itemize}}
 
 \vspace{10pt}
@@ -71,13 +74,6 @@ shaanfire@gmail.com | 630.696.8303 | github.com/ssapra}
 \entry[0.10em]{2013-2015}{CTO}{UEvents}{Chicago}{IL}{
 \begin{itemize}
   \item Developed web platform with Facebook Graph API that offered a comprehensive list of college campus events to over 1800 registered students at UChicago
-\end{itemize}}
-
-\vspace{10pt}
-
-\entry[0.10em]{2012-2013}{Lead Developer}{Project SAM}{Chicago}{IL}{
-\begin{itemize}
-  \item Managed development of MVP that allows healthcare systems in developing countries to manage supply shipments through basic feature-phones
 \end{itemize}}
 
 \section{Education}
@@ -98,8 +94,8 @@ shaanfire@gmail.com | 630.696.8303 | github.com/ssapra}
 
 \section{Skills}
 
-\cvitem{Strong}{Ruby on Rails, SQL, RSpec, Cucumber, Git}
+\cvitem{Strong}{Go, Ruby on Rails, Distributed Systems, Test-Driven Development, MySQL, Git}
 \vspace{3pt}
-\cvitem{Knowledgable}{Go, AngularJS, HTML, CSS, Javascript, Agile Scrum}
+\cvitem{Knowledgeable}{Kubernetes, HTML, CSS, Javascript, Agile Scrum}
 
 \end{document}
